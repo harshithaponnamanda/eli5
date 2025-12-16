@@ -1,7 +1,6 @@
 from openai import OpenAI
 import streamlit as st
 
-# 🔑 OpenAI Client
 client = OpenAI(
     api_key="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"
 )
@@ -47,3 +46,4 @@ Code:
 
             st.success("Explanation:")
             st.write(response.choices[0].message.content)
+
